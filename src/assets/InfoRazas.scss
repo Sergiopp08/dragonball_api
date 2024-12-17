@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+.info-razas {
+  text-align: center;
+  padding: 20px;
+}
+
+.header-container {
+  font-family: 'Bangers', sans-serif;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Alinea verticalmente los elementos */
+  gap: 20px; /* Espacio entre los botones y el título */
+  margin-bottom: 20px; /* Espacio debajo del encabezado */
+}
+
+/* Contenedor de la lista de personajes */
+.character-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas por fila */
+  gap: 20px; /* Espacio entre los elementos */
+  justify-items: center; /* Centra los elementos en cada celda */
+  margin-top: 20px;
+}
+
+.character-list > div {
+  font-family: 'Bangers', sans-serif;
+  text-align: center; /* Centra el texto dentro del contenedor */
+  padding: 10px; /* Espacio dentro del contenedor */
+  background-color: transparent; /* Fondo transparente */
+  border-radius: 10px; /* Bordes redondeados */
+  border: 2px solid black; /* Borde negro alrededor de cada personaje */
+  overflow: hidden; /* Para evitar que el contenido se desborde */
+  position: relative; /* Necesario para efectos de hover */
+}
+
+/* Estilo de la imagen del personaje */
+.character-list img {
+    width: 350px; /* Ajusta el tamaño máximo de la imagen */
+    height: 350px; /* Hace que sea un cuadrado para mantener proporción 1:1 */
+    
+  
+    margin-bottom: 10px;
+    object-fit: contain; /* Garantiza que la imagen mantenga proporción dentro del cuadrado */
+}
+
+/* Efecto hover para ampliar la imagen */
+.character-list > div:hover img {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+}
+
+/* Nombre de la raza del personaje */
+.character-list .race-name {
+  font-size: 1rem; /* Tamaño de la fuente */
+  font-weight: bold; /* Hace el texto en negrita */
+  margin-top: 10px; /* Espacio entre la imagen y el nombre */
+}
+
+/* Agregar un efecto de hover para los elementos */
+.character-item:hover {
+  transform: scale(1.05); /* Aumenta el tamaño del contenedor en hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombra al pasar el mouse */
+}
+
+
+@media (max-width: 768px) {
+  .character-list {
+    grid-template-columns: repeat(2, 1fr); /* Muestra 2 imágenes por fila */
+    gap: 15px; /* Reduce el espacio entre las imágenes */
+  }
+
+  .character-list img {
+    max-width: 200px; /* Limita el tamaño máximo de la imagen */
+  }
+}
+
+/* Media Queries para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  .character-list {
+    grid-template-columns: 1fr; /* Muestra 1 imagen por fila */
+    gap: 10px; /* Reduce aún más el espacio entre las imágenes */
+  }
+
+  .character-list img {
+    max-width: 150px; /* Limita el tamaño máximo de la imagen */
+  }
+}
+
+
+

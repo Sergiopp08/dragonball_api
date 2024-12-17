@@ -1,0 +1,118 @@
+.home {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Estilos para la introducción */
+  .intro p {
+    font-size: 1.8rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  
+  .highlight {
+    font-weight: bold;
+    color: #FF4500;
+    font-size: 1.8rem;
+  }
+  
+  /* Estilos para Características Principales */
+  .features {
+    margin: 50px 0;
+  }
+  
+  .features-box {
+    background-color: #ffffff;
+    color: black;
+    padding: 20px 15px 20px 15px; /* Ajuste de espacio superior/inferior e izquierdo/derecho */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    
+    margin: 0 auto; /* Centra el cuadro */
+    margin-top: 0;
+  }
+  
+  .features h3 {
+    font-family: 'Bangers', sans-serif;
+    font-size: 2rem;
+    margin: 0; /* Elimina el margen superior para que el título esté pegado */
+    padding-bottom: 15px; /* Añade un poco de espacio hacia abajo */
+    border-bottom: 2px solid #FF4500; /* Línea decorativa debajo del título */
+  }
+  
+  .features ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .features li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  /* Estilo para la imagen */
+  .logo {
+    max-width: 250px;
+    margin-top: -60px; /* Empuja la imagen hacia arriba */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+
+  .social-buttons {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  button {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Colores específicos para cada botón */
+  button:nth-child(1) { 
+    background-color: rgb(130, 35, 143);
+  }
+  
+  button:nth-child(2) { 
+    background-color: #1DA1F2;
+  }
+  
+  button:nth-child(3) { 
+    background-color: darkred;
+  }
+  
+  a:nth-child(1) button { 
+    background-color: rgb(130, 35, 143);
+  }
+  
+  a:nth-child(2) button { 
+    background-color: #1DA1F2;
+  }
+  
+  a:nth-child(3) button { 
+    background-color: darkred;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+
+  

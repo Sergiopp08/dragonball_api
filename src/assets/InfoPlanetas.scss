@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+.container_personajes {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .inhabitant-card {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .inhabitant-image {
+  width: 350px; /* Ajusta el tamaño máximo de la imagen */
+  height: 350px; /* Hace que sea un cuadrado para mantener proporción 1:1 */
+  
+
+  margin-bottom: 10px;
+  object-fit: contain; /* Garantiza que la imagen mantenga proporción dentro del cuadrado */
+}
+
+  
+  .inhabitant-name {
+    font-family: 'Bangers', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .no-personajes {
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 2rem;
+    
+  }
+  
+  button.back-button {
+    margin-bottom: 20px;
+  }
+
+  /* Media Queries para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+  .container_personajes {
+    padding: 15px; /* Reducir padding */
+  }
+
+  .inhabitant-card {
+    margin: 5px; /* Reducir margen entre tarjetas */
+    width: 100%; /* Las tarjetas ocuparán el ancho completo */
+    max-width: 300px; /* Establecer un límite máximo para las tarjetas */
+  }
+
+  .inhabitant-image {
+    width: 100%; /* Hacer que las imágenes ocupen todo el ancho disponible */
+    height: auto; /* Mantener la proporción de la imagen */
+  }
+
+  .inhabitant-name {
+    font-size: 1rem; /* Reducir el tamaño de la fuente del nombre */
+  }
+
+  button.back-button {
+    font-size: 1rem; /* Reducir tamaño del botón */
+  }
+}
+
+/* Media Queries para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  .container_personajes {
+    padding: 10px; /* Reducir más el padding */
+  }
+
+  .inhabitant-card {
+    width: 100%; /* Las tarjetas ocuparán el ancho completo */
+    max-width: 250px; /* Establecer un límite máximo aún más pequeño para las tarjetas */
+  }
+
+  .inhabitant-image {
+    width: 100%; /* Las imágenes ocupan todo el ancho disponible */
+    height: auto; /* Mantener la proporción de la imagen */
+  }
+
+  .inhabitant-name {
+    font-size: 0.9rem; /* Reducir el tamaño de la fuente del nombre */
+  }
+
+  button.back-button {
+    font-size: 0.9rem; /* Reducir tamaño del botón */
+  }
+}
+
+

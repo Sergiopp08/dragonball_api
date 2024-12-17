@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+.info-personajes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .info-container {
+    background-color: #f5f5f5;
+    border: 2px solid #ff4500;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-container img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .transformation-carousel {
+    margin-top: 20px;
+  }
+  
+  .transformation-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .transformation-carousel h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .transformation-carousel p {
+    margin-top: 5px;
+    font-size: 1.1rem;
+  }
+
+
+  /* Media Queries para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+  .info-personajes {
+    flex-direction: column; /* Cambiar la dirección del flex a columna */
+    align-items: center; /* Centrar los elementos */
+  }
+
+  .info-container {
+    max-width: 100%; /* Dejar que el contenedor ocupe todo el ancho disponible */
+    padding: 15px; /* Reducir el padding para pantallas pequeñas */
+  }
+
+  .info-container img {
+    width: 80%; /* Reducir el tamaño de la imagen */
+    margin-bottom: 15px; /* Menos espacio debajo de la imagen */
+  }
+
+  .transformation-carousel h3 {
+    font-size: 1.3rem; /* Reducir el tamaño de la cabecera */
+  }
+
+  .transformation-carousel p {
+    font-size: 1rem; /* Reducir el tamaño del texto */
+  }
+}
+
+/* Media Queries para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  .info-container {
+    padding: 10px; /* Reducir padding para pantallas pequeñas */
+  }
+
+  .info-container img {
+    width: 100%; /* Hacer la imagen más grande en pantallas pequeñas */
+    margin-bottom: 10px; /* Reducir el margen inferior de la imagen */
+  }
+
+  .transformation-carousel h3 {
+    font-size: 1.2rem; /* Reducir aún más el tamaño de la cabecera */
+  }
+
+  .transformation-carousel p {
+    font-size: 0.9rem; /* Reducir el tamaño del texto */
+  }
+}
+

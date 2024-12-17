@@ -1,0 +1,140 @@
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #ff4500;
+  color: white;
+}
+
+button.active {
+  background-color: #ff6600;
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.character-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Cuatro columnas para los personajes */
+  gap: 20px;
+}
+
+.character-item {
+  text-align: center;
+}
+
+.character-item img {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  aspect-ratio: 1 / 1; /* Asegura proporción cuadrada */
+  object-fit: contain; /* Ajusta la imagen sin deformarla */
+  border-radius: 8px; /* Bordes redondeados para la imagen */
+  transition: transform 0.3s ease; /* Suaviza la transición */
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+
+/* Pantallas medianas (tabletas) */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column; /* Coloca los botones y el título en columna */
+    gap: 10px; /* Menos espacio entre el título y los botones */
+  }
+
+  .pagination-button {
+    font-size: 0.9rem; /* Reducir el tamaño de los botones */
+    padding: 8px 16px; /* Reducir el padding */
+  }
+
+  .planets-list {
+    gap: 30px; /* Menos espacio entre los planetas */
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas por fila en dispositivos medianos */
+    justify-items: center; /* Asegura que los planetas estén centrados */
+  }
+
+  .planet-card {
+    width: 250px; /* Reducir el tamaño de las tarjetas */
+  }
+
+  .planet-name {
+    font-size: 1.6rem; /* Reducir el tamaño de los nombres */
+  }
+
+  /* Ajustar para mostrar 2 personajes por fila */
+  .character-list {
+    gap: 20px; /* Reducir el espacio entre los personajes */
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas por fila */
+  }
+}
+
+/* Pantallas pequeñas (móviles en modo vertical) */
+@media (max-width: 480px) {
+  .header-container {
+    font-size: 1.5rem; /* Reducir el tamaño del encabezado */
+    flex-direction: column; /* Coloca los elementos en columna */
+    gap: 5px; /* Reducir el espacio entre los elementos */
+  }
+
+  .pagination-button {
+    font-size: 0.8rem; /* Reducir más el tamaño de los botones */
+    padding: 6px 12px; /* Reducir más el padding */
+  }
+
+  .planets-list {
+    gap: 20px; /* Espacio entre los planetas */
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas por fila en pantallas pequeñas */
+  }
+
+  .planet-card {
+    width: 200px; /* Reducir el tamaño de las tarjetas */
+    padding: 8px; /* Reducir el padding */
+  }
+
+  .planet-name {
+    font-size: 1.4rem; /* Reducir el tamaño de los nombres */
+  }
+
+  /* Ajustar las imágenes para pantallas pequeñas */
+  .planet-image {
+    width: 100%; /* Ocupa el 100% del contenedor */
+    height: auto; /* Mantener la proporción */
+  }
+
+  /* Ajustar para mostrar 2 personajes por fila en pantallas pequeñas */
+  .character-list {
+    gap: 15px; /* Reducir el espacio entre los personajes */
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas por fila */
+  }
+}
+
+
+
+
