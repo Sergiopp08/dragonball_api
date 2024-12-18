@@ -63,56 +63,7 @@
   }
 
 
-  .social-buttons {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    display: flex;
-    gap: 10px;
-  }
-  
-  button {
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    opacity: 0.8;
-  }
-  
-  /* Colores específicos para cada botón */
-  button:nth-child(1) { 
-    background-color: rgb(130, 35, 143);
-  }
-  
-  button:nth-child(2) { 
-    background-color: #1DA1F2;
-  }
-  
-  button:nth-child(3) { 
-    background-color: darkred;
-  }
-  
-  a:nth-child(1) button { 
-    background-color: rgb(130, 35, 143);
-  }
-  
-  a:nth-child(2) button { 
-    background-color: #1DA1F2;
-  }
-  
-  a:nth-child(3) button { 
-    background-color: darkred;
-  }
-  
-  a {
-    text-decoration: none;
-  }
+
 
 
   
